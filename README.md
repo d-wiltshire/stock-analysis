@@ -10,12 +10,26 @@ Using images and examples of your code, compare the stock performance between 20
 
 The overall result was that ____ stock performed the best, and ____ performed the worst in 2017 and 2018. This result was measured by dividing the ending closing stock price(??) by the starting price, in order to identify the amount of change. The following screenshots demonstrate the amount of change in a table format.
 
+![2017](https://user-images.githubusercontent.com/100863488/157741105-ec44e04d-1645-42b9-9c41-ade1a2ec075c.png)
+![2018](https://user-images.githubusercontent.com/100863488/157741124-72656e2d-41a8-48ec-8852-790f38eaf4fa.png)
+
+
 
 The analysis was improved after its original coding with refactored code, in order to improve performance. The original analysis used code that...
 
 The refactored analysis used code that....
 
 The refactored code produced significant gains in terms of computation speed. Using the original code, the computation time for 2017 figures was _____, and for 2018 figures was _____. Using the refactored code, the computation time for 2017 figures was _____. and for 2018 figures was ______. 
+
+![VBA_Challenge_2017_originalcode](https://user-images.githubusercontent.com/100863488/157741205-b73e3aed-55e9-40df-9271-838b0f26209d.png)
+![VBA_Challenge_2017_refactoredcode](https://user-images.githubusercontent.com/100863488/157741220-a4dcb804-596f-4691-b755-b38af6b6eaf0.png)
+
+![VBA_Challenge_2018_originalcode](https://user-images.githubusercontent.com/100863488/157741229-2e0e1123-1407-406f-bdae-701c4d9092c6.png)
+![VBA_Challenge_2018_refactoredcode](https://user-images.githubusercontent.com/100863488/157741244-fd56c5a7-3743-4480-9be8-237cc0799f26.png)
+
+
+
+
 
 The entire refactored code follows: 
 
