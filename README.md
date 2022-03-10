@@ -180,7 +180,7 @@ There are potential disadvantages to refactoring code, but they are outweighed b
 
 
 ### How do these pros and cons apply to refactoring the original VBA script?
-In this case, refactoring made our code more complex from the user perspective, but more nimble from the processor's perspective, as it used a a `tickerIndex` variable to link four arrays (`tickers`, `tickerVolumes`, `tickerStartingPrices`, and `tickerEndingPrices`). The program did not need to loop through the dataset using the refactored code in the same way as it did in the original code. 
+In this case, refactoring made our code more complex from the user perspective, but more nimble from the processor's perspective, as it used a a `tickerIndex` variable to link four arrays (`tickers`, `tickerVolumes`, `tickerStartingPrices`, and `tickerEndingPrices`). The program did not need to loop through the dataset using the refactored code in the same way as it did in the original code. This would be a great benefit it the code were used on a much larger dataset.
 
 Since the code is longer and more complex in the refactored code, the refactored code is not necessarily more intuitive for the user, so commenting and the use of whitespace are more important in the refactored code than in the original.
 
