@@ -81,7 +81,6 @@ Sub AllStocksAnalysisRefactored()
     Sheets(yearValue).Activate
     
      
-        
     '2b) Loop over all the rows in the spreadsheet.
     For j = 2 To RowCount
     
@@ -114,7 +113,6 @@ Sub AllStocksAnalysisRefactored()
         Cells(4 + i, 1).Value = tickers(i)
         Cells(4 + i, 2).Value = tickerVolumes(i)
         Cells(4 + i, 3).Value = tickerEndingPrices(i) / tickerStartingPrices(i) - 1
-        
         
         Next i
     
