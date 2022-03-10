@@ -19,7 +19,7 @@ The refactored code produced significant gains in terms of computation speed. Us
 
 The entire refactored code follows: 
 
-'''
+```
 Sub AllStocksAnalysisRefactored()
     
     Dim startTime As Single
@@ -156,7 +156,7 @@ Sub AllStocksAnalysisRefactored()
     MsgBox "The refactored All Stocks Analysis ran in " & (endTime - startTime) & " seconds for the year " & (yearValue)
 
 End Sub
-'''
+```
 
 
 
