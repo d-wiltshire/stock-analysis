@@ -20,7 +20,6 @@ The refactored code produced significant gains in terms of computation speed. Us
 The entire refactored code follows: 
 
 '''
-
 Sub AllStocksAnalysisRefactored()
     
     Dim startTime As Single
@@ -72,7 +71,7 @@ Sub AllStocksAnalysisRefactored()
     Dim tickerEndingPrices(12) As Single
 
     
-    ''2a) Create a for loop to initialize the tickerVolumes to zero
+    '2a) Create a for loop to initialize the tickerVolumes to zero
     
     For tickerIndex = 0 To 11
     tickerVolumes(tickerIndex) = 0
@@ -83,7 +82,7 @@ Sub AllStocksAnalysisRefactored()
     
      
         
-    ''2b) Loop over all the rows in the spreadsheet.
+    '2b) Loop over all the rows in the spreadsheet.
     For j = 2 To RowCount
     
         '3a) Increase volume for current ticker
@@ -104,7 +103,7 @@ Sub AllStocksAnalysisRefactored()
             tickerIndex = tickerIndex + 1
             End If
              
-    Next j
+          Next j
    
     
     '4) Loop through your arrays to output the Ticker, Total Daily Volume, and Return.
@@ -121,9 +120,7 @@ Sub AllStocksAnalysisRefactored()
     
     Next tickerIndex
   
-     
-
-        
+   
     
     'Formatting
     Worksheets("All Stocks Analysis").Activate
@@ -159,7 +156,6 @@ Sub AllStocksAnalysisRefactored()
     MsgBox "The refactored All Stocks Analysis ran in " & (endTime - startTime) & " seconds for the year " & (yearValue)
 
 End Sub
-
 '''
 
 
