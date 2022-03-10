@@ -2,13 +2,12 @@
 
 ## Overview of Project
 
-The purpose of this analysis was to compute the total daily volume and percentage of change(?) of various stocks, in order to clearly visualize the percentage by which each stock increased or decreased in value. The computation and visualization was performed for both 2017 and 2019 stock value figures. Visualization was improved by adding conditional formatting to highlight increased percentage values in green and decreased percentage values in red.
+The purpose of this analysis was to compute the total daily volume and percentage of change of various stocks, in order to clearly visualize the percentage by which each stock increased or decreased in value. The computation and visualization was performed for both 2017 and 2019 stock value figures. Visualization was improved by adding conditional formatting to highlight increased percentage values in green and decreased percentage values in red.
 
 
 ## Results
-Using images and examples of your code, compare the stock performance between 2017 and 2018, as well as the execution times of the original script and the refactored script.
 
-The overall result was that ____ stock performed the best, and ____ performed the worst in 2017 and 2018. This result was measured by dividing the ending closing stock price(??) by the starting price, in order to identify the amount of change. The following screenshots demonstrate the amount of change in a table format.
+The overall result was that ENPH stock performed the best, and most stocks performed worse in 2018 than in 2017. This result was measured by dividing the closing stock price at the end of the timeframe of this study by the stock price at the beginning of the timeframe, to quantify the amount of change. The following screenshots demonstrate the amount of change in a table format.
 
 ![2017](https://user-images.githubusercontent.com/100863488/157741105-ec44e04d-1645-42b9-9c41-ade1a2ec075c.png)
 
@@ -16,11 +15,11 @@ The overall result was that ____ stock performed the best, and ____ performed th
 
 
 
-The analysis was improved after its original coding with refactored code, in order to improve performance. The original analysis used code that...
+The analysis was improved, after its original coding, with refactored code.
 
-The refactored analysis used code that....
+The refactored analysis utilized a `tickerIndex` variable across four arrays (`tickers`, `tickerVolumes`, `tickerStartingPrices`, and `tickerEndingPrices`).
 
-The refactored code produced significant gains in terms of computation speed. Using the original code, the computation time for 2017 figures was _____, and for 2018 figures was _____. Using the refactored code, the computation time for 2017 figures was _____. and for 2018 figures was ______. 
+The refactored code produced significant gains in terms of computation speed. Using the original code, the computation time for 2017 figures was approximately .746 seconds, and for 2018 figures was approximately .754 seconds. Using the refactored code, the computation time was approximately .105 seconds for both 2017 and 2018. 
 
 ![VBA_Challenge_2017_originalcode](https://user-images.githubusercontent.com/100863488/157741205-b73e3aed-55e9-40df-9271-838b0f26209d.png)
 ![VBA_Challenge_2017_refactoredcode](https://user-images.githubusercontent.com/100863488/157741220-a4dcb804-596f-4691-b755-b38af6b6eaf0.png)
