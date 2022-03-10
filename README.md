@@ -2,7 +2,8 @@
 
 ## Overview of Project
 
-The purpose of this analysis was to compute the total daily volume and percentage of change of various stocks, in order to clearly visualize the percentage by which each stock increased or decreased in value. The computation and visualization was performed for both 2017 and 2019 stock value figures. Visualization was improved by adding conditional formatting to highlight increased percentage values in green and decreased percentage values in red.
+The purpose of this analysis was to compute the total daily volume and percentage of change annually of various stocks, in order to clearly visualize the percentage by which each stock increased or decreased in value over a given timeframe. The computation and visualization was performed for both 2017 and 2018 stock value figures. Visualization was improved by adding conditional formatting to highlight increased values in green and decreased values in red.
+
 
 
 ## Results
@@ -14,12 +15,11 @@ The overall result was that ENPH stock performed the best, and most stocks perfo
 ![2018](https://user-images.githubusercontent.com/100863488/157741124-72656e2d-41a8-48ec-8852-790f38eaf4fa.png)
 
 
+### Results of Refactoring
 
-The analysis was improved, after its original coding, with refactored code.
+The analysis was improved, after its original coding, with refactored code. The refactored analysis utilized a `tickerIndex` variable across four arrays (`tickers`, `tickerVolumes`, `tickerStartingPrices`, and `tickerEndingPrices`).
 
-The refactored analysis utilized a `tickerIndex` variable across four arrays (`tickers`, `tickerVolumes`, `tickerStartingPrices`, and `tickerEndingPrices`).
-
-The refactored code produced significant gains in terms of computation speed. Using the original code, the computation time for 2017 figures was approximately .746 seconds, and for 2018 figures was approximately .754 seconds. Using the refactored code, the computation time was approximately .105 seconds for both 2017 and 2018. 
+The refactored code produced significant gains in terms of computation speed. Using the original code, the computation time for 2017 figures was approximately .746 seconds and for 2018 figures was approximately .754 seconds. Using the refactored code, the computation time was approximately .105 seconds for both 2017 and 2018. 
 
 ![VBA_Challenge_2017_originalcode](https://user-images.githubusercontent.com/100863488/157741205-b73e3aed-55e9-40df-9271-838b0f26209d.png)
 ![VBA_Challenge_2017_refactoredcode](https://user-images.githubusercontent.com/100863488/157741220-a4dcb804-596f-4691-b755-b38af6b6eaf0.png)
@@ -28,8 +28,7 @@ The refactored code produced significant gains in terms of computation speed. Us
 ![VBA_Challenge_2018_refactoredcode](https://user-images.githubusercontent.com/100863488/157741244-fd56c5a7-3743-4480-9be8-237cc0799f26.png)
 
 
-
-
+### Refactored Code
 
 The entire refactored code follows: 
 
@@ -175,12 +174,14 @@ End Sub
 ## Summary
 
 ### What are the advantages or disadvantages of refactoring code?
-Refactoring involves editing or rewriting code in order to make it more streamlined, clearer, easier to process, and/or less error-prone, and it can have many advantages. In this example, refactoring the code led to significant gains in computation speed. Refactoring can also lead to code that is easier for multiple people to understand and collaborate on, and it can prevent kludges or... It can also lead to code that makes a program more versatile for future use.
+Refactoring involves editing or rewriting code in order to make it more streamlined, clearer, easier to process, and/or less error-prone, and it can have many advantages. In this example, refactoring the code led to significant gains in computation speed. Refactoring can also lead to code that is easier for multiple people to understand and collaborate on and code that makes a program more versatile for future use.
 
 There are potential disadvantages to refactoring code, but they are outweighed by the advantages of doing so. The primary disadvantages would include the accidental introduction of errors or the misunderstanding of previous code such that the refactored code no longer serves the purpose of the original code. 
 
 
 ### How do these pros and cons apply to refactoring the original VBA script?
-In this case, refactoring made our code more complex from the user perspective, but more nimble from the processor's perspective, as it used arrays to link.... 
+In this case, refactoring made our code more complex from the user perspective, but more nimble from the processor's perspective, as it used a a `tickerIndex` variable to link four arrays (`tickers`, `tickerVolumes`, `tickerStartingPrices`, and `tickerEndingPrices`). The program did not need to loop through the dataset using the refactored code in the same way as it did in the original code. 
+
+Since the code is longer and more complex in the refactored code, the refactored code is not necessarily more intuitive for the user, so commenting and the use of whitespace are more important in the refactored code than in the original.
 
 
