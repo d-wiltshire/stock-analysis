@@ -11,6 +11,7 @@ Using images and examples of your code, compare the stock performance between 20
 The overall result was that ____ stock performed the best, and ____ performed the worst in 2017 and 2018. This result was measured by dividing the ending closing stock price(??) by the starting price, in order to identify the amount of change. The following screenshots demonstrate the amount of change in a table format.
 
 ![2017](https://user-images.githubusercontent.com/100863488/157741105-ec44e04d-1645-42b9-9c41-ade1a2ec075c.png)
+
 ![2018](https://user-images.githubusercontent.com/100863488/157741124-72656e2d-41a8-48ec-8852-790f38eaf4fa.png)
 
 
